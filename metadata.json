@@ -1,0 +1,9 @@
+{
+  "name": "Copy of Srdjan - Tesla X Omega Prime",
+  "description": "The ultimate AI working robot, capable of high-level engineering, video production, and real-time neural interaction.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera",
+    "geolocation"
+  ]
+}
