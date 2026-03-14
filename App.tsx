@@ -13,6 +13,7 @@ import YoutubeHub from './components/YoutubeHub';
 import MeetingAgent from './components/MeetingAgent';
 import MemoryHub from './components/MemoryHub';
 import NeuralActivity from './components/NeuralActivity';
+import WindowsControl from './components/WindowsControl';
 
 const App: React.FC = () => {
   const [mode, setMode] = useState<AgentMode>(AgentMode.VOICE);
@@ -235,6 +236,8 @@ const App: React.FC = () => {
         return <ExtensionHub onThinkingChange={setIsThinking} addLog={addLog} />;
       case AgentMode.MEMORY:
         return <MemoryHub onThinkingChange={setIsThinking} addLog={addLog} />;
+      case AgentMode.WINDOWS:
+        return <WindowsControl onThinkingChange={setIsThinking} addLog={addLog} />;
       default:
         return <div className="p-10 text-white/20 uppercase font-black italic">Izaberi modul_</div>;
     }
@@ -249,6 +252,7 @@ const App: React.FC = () => {
     { id: AgentMode.MEETING, icon: 'M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z', label: 'Neuralni Sastanak' },
     { id: AgentMode.EXTENSION, icon: 'M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 011-1h1a2 2 0 100-4H7a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 001-1V4z', label: 'Proširenja' },
     { id: AgentMode.MEMORY, icon: 'M12 2v20M2 12h20', label: 'Neuralni Arhiv' },
+    { id: AgentMode.WINDOWS, icon: 'M4 6h16M4 12h16M4 18h16', label: 'Windows Kontrola' },
     { id: AgentMode.INSTALL, icon: 'M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4', label: 'Implementacija' },
   ];
 

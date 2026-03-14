@@ -8,7 +8,8 @@ export enum AgentMode {
   MEETING = 'MEETING',
   BROWSER = 'BROWSER',
   EXTENSION = 'EXTENSION',
-  MEMORY = 'MEMORY'
+  MEMORY = 'MEMORY',
+  WINDOWS = 'WINDOWS'
 }
 
 export enum AvatarShape {

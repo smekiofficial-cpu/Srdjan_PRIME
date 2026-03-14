@@ -1,6 +1,6 @@
 {
-  "name": "Copy of Srdjan - Tesla X Omega Prime",
-  "description": "The ultimate AI working robot, capable of high-level engineering, video production, and real-time neural interaction.",
+  "name": "Srdjan",
+  "description": "The ultimate AI working robot, capable of high-level engineering, video production, and real-time neural interaction.Srdjan work offline on windows,srdjan kontrol windows.",
   "requestFramePermissions": [
     "microphone",
     "camera",
